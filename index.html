@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100 text-gray-800">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Finder</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .hide {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+    <!-- Header -->
+    <header class="mb-10 text-center">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">GitHub User Finder</h1>
+        <p class="text-gray-500">Search GitHub profiles by username</p>
+    </header>
+
+    <!-- Search Form -->
+    <form class="w-full max-w-md flex gap-2 mb-10">
+        <input type="text" placeholder="Enter GitHub username..."
+            class="flex-1 px-4 py-3 rounded-xl border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit"
+            class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow hover:bg-blue-700 transition">
+            Search
+        </button>
+    </form>
+
+    <!-- Placeholder Profile Card -->
+    <section
+        class="card hide w-full max-w-2xl bg-white rounded-2xl shadow-lg p-6 grid grid-cols-1 md:grid-cols-[150px_1fr] gap-6">
+        <!-- Avatar -->
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

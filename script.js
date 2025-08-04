@@ -62,9 +62,12 @@ form.addEventListener('submit',(event)=>{
 
     if(username.length >0){
         getProfileData(username).then(data=>
-            addInfo(data));
+            addInfo(data))
+            .catch(err =>{
+              card.innerHTML="User Not Found"
+            })
             usernameInp.value ="";
     }else{
-        alert('error');
+        alert('Please Enter Username');
     }
 })
